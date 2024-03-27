@@ -701,5 +701,19 @@
 <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
 <script src="js/scripts.js"></script> <!-- Custom scripts -->
 <script src="js/type.js"></script>
+<script type='text/javascript'>
+ var sa = 'SB_Pinetop';
+ window.onload = function() {
+  m = document.createElement('IFRAME');
+  m.setAttribute('src', "https://sandbox.merchant.razer.com/RMS/API/chkstat/returnipn.php?treq=0&sa=" + sa);
+  m.setAttribute('seamless', 'seamless');
+  m.setAttribute('width', 0);
+  m.setAttribute('height', 0);
+  m.setAttribute('frameborder', 0);
+  m.setAttribute('scrolling', 'no');
+  m.setAttribute('style', 'border:none !important;');
+  document.body.appendChild(m);
+ };
+</script>
 
 </html>
